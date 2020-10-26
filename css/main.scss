@@ -69,6 +69,7 @@
   padding: 0;
   position: relative;
   top: 15px;
+  cursor: pointer;
   &::after {
     content: "";
     position: relative;
@@ -108,6 +109,7 @@
   background-color: white;
   position: relative;
   top: 15px;
+  cursor: pointer;
   &::after {
     content: "";
     display: inline-block;
