@@ -1,0 +1,266 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.btn {
+  background-color: #3f87db;
+  border-color: #3f87db;
+}
+
+.backdrop {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sidedrawer {
+  position: fixed;
+  width: 280px;
+  max-width: 70%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  z-index: 200;
+  background-color: #41555C;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  -webkit-transform: translateY(-1000%);
+          transform: translateY(-1000%);
+}
+
+.sidedrawer-menu {
+  color: white;
+  list-style-type: none;
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 50px;
+}
+
+.sidedrawer-menu li {
+  height: 50px;
+  padding: 10px;
+}
+
+.sidedrawer-menu li:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.my-container {
+  min-width: 400px;
+}
+
+.my-img {
+  -webkit-clip-path: inset(15px 0 0 0);
+          clip-path: inset(15px 0 0 0);
+  width: 100%;
+  height: auto;
+  position: relative;
+  bottom: 15px;
+}
+
+.arrow {
+  width: 20px;
+  height: 3px;
+  background-color: white;
+  padding: 0;
+  position: relative;
+  top: 15px;
+}
+
+.arrow::after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 17px;
+  height: 3px;
+  background-color: white;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  right: 6px;
+  bottom: 59px;
+}
+
+.arrow::before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 17px;
+  height: 3px;
+  background-color: white;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  right: 6px;
+  bottom: 15px;
+}
+
+.arrow:hover {
+  background-color: #bebebe;
+}
+
+.arrow:hover::after {
+  background-color: #bebebe;
+}
+
+.arrow:hover::before {
+  background-color: #bebebe;
+}
+
+.sandwitch-menu {
+  width: 22px;
+  height: 3px;
+  background-color: white;
+  position: relative;
+  top: 15px;
+}
+
+.sandwitch-menu::after {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 3px;
+  background-color: white;
+  position: relative;
+  bottom: 47px;
+}
+
+.sandwitch-menu::before {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 3px;
+  background-color: white;
+  position: relative;
+  bottom: 28px;
+}
+
+.sandwitch-menu:hover {
+  background-color: #bebebe;
+}
+
+.sandwitch-menu:hover::after {
+  background-color: #bebebe;
+}
+
+.sandwitch-menu:hover::before {
+  background-color: #bebebe;
+}
+
+.overlay-nav {
+  padding-top: 5px;
+  font-size: 22.5px;
+}
+
+.overlay-bottom {
+  height: 208px;
+}
+
+.overlay-button-row {
+  height: 105px;
+}
+
+.overlay-button {
+  font-size: 11.25px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  border-radius: 50%;
+}
+
+.overlay-numbers {
+  font-size: 13.5px;
+  margin: 0;
+}
+
+.overlay-text {
+  font-size: 11.25px;
+}
+
+.card {
+  width: 400px;
+  height: 613px;
+  border: none;
+}
+
+.card-content {
+  color: #95989a;
+  width: 291px;
+}
+
+.card-title {
+  font-size: 15px;
+}
+
+.card-subtitle {
+  font-size: 11.25px;
+}
+
+.card-subtitle-horizontal-break {
+  height: 0px;
+  margin: 3px 0 15px;
+}
+
+.card-text {
+  font-size: 15px;
+  line-height: 15px;
+}
+
+.card-button-row {
+  height: 73px;
+}
+
+.card-follow-button {
+  font-size: 11.25px;
+  border-radius: 20px;
+  padding: 10px;
+  width: 160px;
+}
+
+@media (min-width: 401px) {
+  body::before {
+    background: url("../images/Rectangle 3.jpg") no-repeat center center fixed;
+    content: "";
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(15px);
+  }
+  .card {
+    border-radius: 17px;
+    height: 633px;
+  }
+  .card-row {
+    height: 100vh;
+  }
+  .card-button-row {
+    height: 65px;
+  }
+  .my-img {
+    -webkit-clip-path: none;
+            clip-path: none;
+    bottom: 0;
+    border-radius: 17px;
+  }
+  .overlay-bottom {
+    height: 223px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.btn {
+  background-color: #3f87db;
+  border-color: #3f87db;
+}
+
+.backdrop {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sidedrawer {
+    position: fixed;
+    width: 280px;
+    max-width: 70%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 200;
+    background-color: #41555C;
+    box-sizing: border-box;
+    transition: transform 0.2s ease-in-out;
+    transform: translateY(-1000%);
+    &-menu {
+      color: white;
+      list-style-type: none;
+      font-weight: bold;
+      font-size: 20px;
+      padding-top: 50px;
+      li {
+        height: 50px;
+        padding: 10px;
+        &:hover{
+        color: black;
+        cursor: pointer;
+        }
+      }
+    }
+}
+
+.my-container {
+  min-width: 400px;
+}
+
+.my-img {
+  clip-path: inset(15px 0 0 0);
+  width: 100%;
+  height: auto;
+  position: relative;
+  bottom: 15px;
+}
+
+.arrow {
+  width: 20px;
+  height: 3px;
+  background-color: white;
+  padding: 0;
+  position: relative;
+  top: 15px;
+  &::after {
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 17px;
+    height: 3px;
+    background-color: white;
+    transform: rotate(-45deg);
+    right: 6px;
+    bottom: 59px;
+  }
+  &::before {
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 17px;
+    height: 3px;
+    background-color: white;
+    transform: rotate(45deg);
+    right: 6px;
+    bottom: 15px;
+  }
+  &:hover {
+    background-color: rgb(190, 190, 190);
+    &::after {
+      background-color: rgb(190, 190, 190);
+    }
+    &::before {
+      background-color: rgb(190, 190, 190);
+    }
+  }
+}
+
+.sandwitch-menu {
+  width: 22px;
+  height: 3px;
+  background-color: white;
+  position: relative;
+  top: 15px;
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 3px;
+    background-color: white;
+    position: relative;
+    bottom: 47px;
+  }
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 3px;
+    background-color: white;
+    position: relative;
+    bottom: 28px;
+  }
+  &:hover {
+    background-color: rgb(190, 190, 190);
+    &::after {
+      background-color: rgb(190, 190, 190);
+    }
+    &::before {
+      background-color: rgb(190, 190, 190);
+    }
+  }
+}
+
+.overlay {
+  &-nav {
+    padding-top: 5px;
+    font-size: 22.5px;
+  }
+  &-bottom {
+    height: 208px;
+  }
+  &-button-row {
+    height: 105px;
+  }
+  &-button {
+    font-size: 11.25px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    border-radius: 50%;
+  }
+  &-numbers {
+    font-size: 13.5px;
+    margin: 0;
+  }
+  &-text {
+    font-size: 11.25px;
+  }
+}
+
+.card {
+  width: 400px;
+  height: 613px;
+  border: none;
+  &-content {
+    color: #95989a;
+    width: 291px;
+  }
+  &-title {
+    font-size: 15px;
+  }
+  &-subtitle {
+    font-size: 11.25px;
+    &-horizontal-break {
+      height: 0px;
+      margin: 3px 0 15px;
+    }
+  }
+  &-text {
+    font-size: 15px;
+    line-height: 15px;
+  }
+  &-button-row {
+    height: 73px;
+  }
+  &-follow-button {
+    font-size: 11.25px;
+    border-radius: 20px;
+    padding: 10px;
+    width: 160px;
+  }
+}
+
+@media (min-width: 401px) {
+  body::before {
+    background: url("../images/Rectangle\ 3.jpg") no-repeat center center fixed;
+    content: "";
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(15px);
+  }
+
+  .card {
+    border-radius: 17px;
+    height: 633px;
+    &-row {
+      height: 100vh;
+    }
+    &-button-row {
+      height: 65px;
+    }
+  }
+
+  .my-img {
+    clip-path: none;
+    bottom: 0;
+    border-radius: 17px;
+  }
+
+  .overlay-bottom {
+    height: 223px;
+  }
+}
