@@ -23,7 +23,7 @@
 
 .sidedrawer {
     position: fixed;
-    width: 280px;
+    width: 70%;
     max-width: 70%;
     height: 100%;
     right: 0;
@@ -50,9 +50,9 @@
     }
 }
 
-.my-container {
-  min-width: 400px;
-}
+// .my-container {
+//   min-width: 400px;
+// }
 
 .my-img {
   clip-path: inset(15px 0 0 0);
@@ -155,6 +155,9 @@
     padding-top: 21px;
     padding-bottom: 21px;
     border-radius: 50%;
+    width: 63px;
+    bottom:0;
+    white-space: nowrap;
   }
   &-numbers {
     font-size: 13.5px;
@@ -215,6 +218,10 @@
     -o-filter: blur(10px);
     -ms-filter: blur(10px);
     filter: blur(15px);
+  }
+
+  .sidedrawer {
+    width: 280px;
   }
 
   .card {

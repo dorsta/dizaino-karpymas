@@ -24,7 +24,7 @@
 
 .sidedrawer {
   position: fixed;
-  width: 280px;
+  width: 70%;
   max-width: 70%;
   height: 100%;
   right: 0;
@@ -57,10 +57,6 @@
 .sidedrawer-menu li:hover {
   color: black;
   cursor: pointer;
-}
-
-.my-container {
-  min-width: 400px;
 }
 
 .my-img {
@@ -179,6 +175,9 @@
   padding-top: 21px;
   padding-bottom: 21px;
   border-radius: 50%;
+  width: 63px;
+  bottom: 0;
+  white-space: nowrap;
 }
 
 .overlay-numbers {
@@ -244,6 +243,9 @@
     -o-filter: blur(10px);
     -ms-filter: blur(10px);
     filter: blur(15px);
+  }
+  .sidedrawer {
+    width: 280px;
   }
   .card {
     border-radius: 17px;
