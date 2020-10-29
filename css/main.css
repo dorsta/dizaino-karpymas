@@ -61,7 +61,7 @@
   cursor: pointer;
 }
 
-.arrow::after {
+.arrow:after {
   content: "";
   position: relative;
   display: inline-block;
@@ -74,7 +74,7 @@
   bottom: 59px;
 }
 
-.arrow::before {
+.arrow:before {
   content: "";
   position: relative;
   display: inline-block;
@@ -91,11 +91,11 @@
   background-color: #bebebe;
 }
 
-.arrow:hover::after {
+.arrow:hover:after {
   background-color: #bebebe;
 }
 
-.arrow:hover::before {
+.arrow:hover:before {
   background-color: #bebebe;
 }
 
@@ -108,7 +108,7 @@
   cursor: pointer;
 }
 
-.sandwitch-menu::after {
+.sandwitch-menu:after {
   content: "";
   display: inline-block;
   width: 22px;
@@ -118,7 +118,7 @@
   bottom: 47px;
 }
 
-.sandwitch-menu::before {
+.sandwitch-menu:before {
   content: "";
   display: inline-block;
   width: 22px;
@@ -132,11 +132,11 @@
   background-color: #bebebe;
 }
 
-.sandwitch-menu:hover::after {
+.sandwitch-menu:hover:after {
   background-color: #bebebe;
 }
 
-.sandwitch-menu:hover::before {
+.sandwitch-menu:hover:before {
   background-color: #bebebe;
 }
 
@@ -237,7 +237,7 @@
 }
 
 @media (min-width: 401px) {
-  body::before {
+  body:before {
     background: url("../images/Rectangle 3.jpg") no-repeat center center fixed;
     content: "";
     z-index: -1;
