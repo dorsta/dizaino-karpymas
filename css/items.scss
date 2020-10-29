@@ -52,7 +52,7 @@
     position: relative;
     top: 15px;
     cursor: pointer;
-    &::after {
+    &:after {
       content: "";
       position: relative;
       display: inline-block;
@@ -63,7 +63,7 @@
       right: 6px;
       bottom: 59px;
     }
-    &::before {
+    &:before {
       content: "";
       position: relative;
       display: inline-block;
@@ -76,10 +76,10 @@
     }
     &:hover {
       background-color: rgb(190, 190, 190);
-      &::after {
+      &:after {
         background-color: rgb(190, 190, 190);
       }
-      &::before {
+      &:before {
         background-color: rgb(190, 190, 190);
       }
     }
@@ -92,7 +92,7 @@
     position: relative;
     top: 15px;
     cursor: pointer;
-    &::after {
+    &:after {
       content: "";
       display: inline-block;
       width: 22px;
@@ -101,7 +101,7 @@
       position: relative;
       bottom: 47px;
     }
-    &::before {
+    &:before {
       content: "";
       display: inline-block;
       width: 22px;
@@ -112,10 +112,10 @@
     }
     &:hover {
       background-color: rgb(190, 190, 190);
-      &::after {
+      &:after {
         background-color: rgb(190, 190, 190);
       }
-      &::before {
+      &:before {
         background-color: rgb(190, 190, 190);
       }
     }
