@@ -29,21 +29,29 @@
   transition: -webkit-transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
-  -webkit-transform: translateY(-1000%);
-          transform: translateY(-1000%);
+  -webkit-transform: translateX(1000%);
+          transform: translateX(1000%);
 }
 
 .sidedrawer-menu {
   color: white;
   list-style-type: none;
   font-weight: bold;
-  font-size: 20px;
-  padding-top: 50px;
+  font-size: 1.25em;
+  padding-top: 30px;
 }
 
 .sidedrawer-menu li {
-  height: 50px;
-  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
 }
 
 .sidedrawer-menu li:hover {
@@ -52,91 +60,99 @@
 }
 
 .arrow {
-  width: 20px;
-  height: 3px;
+  width: 30px;
+  height: 4px;
   background-color: white;
   padding: 0;
   position: relative;
-  top: 15px;
   cursor: pointer;
 }
 
-.arrow::after {
+.arrow:after {
   content: "";
   position: relative;
-  display: inline-block;
-  width: 17px;
-  height: 3px;
+  display: inherit;
+  width: 24px;
+  height: 4px;
   background-color: white;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  right: 6px;
-  bottom: 59px;
+  right: 4px;
+  bottom: 11px;
 }
 
-.arrow::before {
+.arrow:before {
   content: "";
   position: relative;
-  display: inline-block;
-  width: 17px;
-  height: 3px;
+  display: inherit;
+  width: 24px;
+  height: 4px;
   background-color: white;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  right: 6px;
-  bottom: 15px;
+  right: 4px;
+  top: 7.2px;
 }
 
 .arrow:hover {
   background-color: #bebebe;
 }
 
-.arrow:hover::after {
+.arrow:hover:after {
   background-color: #bebebe;
 }
 
-.arrow:hover::before {
+.arrow:hover:before {
   background-color: #bebebe;
 }
 
 .sandwitch-menu {
-  width: 22px;
-  height: 3px;
+  width: 33px;
+  height: 4px;
   background-color: white;
   position: relative;
-  top: 15px;
   cursor: pointer;
 }
 
-.sandwitch-menu::after {
+.sandwitch-menu:after {
   content: "";
-  display: inline-block;
-  width: 22px;
-  height: 3px;
+  display: inherit;
+  height: 4px;
   background-color: white;
   position: relative;
-  bottom: 47px;
+  bottom: 13px;
 }
 
-.sandwitch-menu::before {
+.sandwitch-menu:before {
   content: "";
-  display: inline-block;
-  width: 22px;
-  height: 3px;
+  display: inherit;
+  height: 4px;
   background-color: white;
   position: relative;
-  bottom: 28px;
+  top: 9px;
 }
 
 .sandwitch-menu:hover {
   background-color: #bebebe;
 }
 
-.sandwitch-menu:hover::after {
+.sandwitch-menu:hover:after {
   background-color: #bebebe;
 }
 
-.sandwitch-menu:hover::before {
+.sandwitch-menu:hover:before {
   background-color: #bebebe;
+}
+
+@media (min-width: 532.1px) {
+  .sidedrawer {
+    width: 373px;
+  }
+}
+
+@media (max-width: 350px) {
+  .sidedrawer-menu li {
+    height: 40px;
+  }
 }
 /*# sourceMappingURL=items.css.map */

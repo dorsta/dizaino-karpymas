@@ -26,16 +26,19 @@
     background-color: #41555c;
     box-sizing: border-box;
     transition: transform 0.2s ease-in-out;
-    transform: translateY(-1000%);
+    transform: translateX(1000%);
     &-menu {
       color: white;
       list-style-type: none;
       font-weight: bold;
-      font-size: 20px;
-      padding-top: 50px;
+      font-size: 1.25em;
+      padding-top: 30px;
       li {
-        height: 50px;
-        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+        // padding: 30px;
         &:hover {
           color: black;
           cursor: pointer;
@@ -45,78 +48,90 @@
   }
   
   .arrow {
-    width: 20px;
-    height: 3px;
+    width: 30px;
+    height: 4px;
     background-color: white;
     padding: 0;
     position: relative;
-    top: 15px;
     cursor: pointer;
-    &::after {
+    &:after {
       content: "";
       position: relative;
-      display: inline-block;
-      width: 17px;
-      height: 3px;
+      display: inherit;
+      width: 24px;
+      height: 4px;
       background-color: white;
       transform: rotate(-45deg);
-      right: 6px;
-      bottom: 59px;
+      right: 4px;
+      bottom: 11px;
     }
-    &::before {
+    &:before {
       content: "";
       position: relative;
-      display: inline-block;
-      width: 17px;
-      height: 3px;
+      display: inherit;
+      width: 24px;
+      height: 4px;
       background-color: white;
       transform: rotate(45deg);
-      right: 6px;
-      bottom: 15px;
+      right: 4px;
+      top: 7.2px;
     }
     &:hover {
       background-color: rgb(190, 190, 190);
-      &::after {
+      &:after {
         background-color: rgb(190, 190, 190);
       }
-      &::before {
+      &:before {
         background-color: rgb(190, 190, 190);
       }
     }
   }
   
   .sandwitch-menu {
-    width: 22px;
-    height: 3px;
+    width: 33px;
+    height: 4px;
     background-color: white;
     position: relative;
-    top: 15px;
     cursor: pointer;
-    &::after {
+    &:after {
       content: "";
-      display: inline-block;
-      width: 22px;
-      height: 3px;
+      display: inherit;
+      height: 4px;
       background-color: white;
       position: relative;
-      bottom: 47px;
+      bottom: 13px;
     }
-    &::before {
+    &:before {
       content: "";
-      display: inline-block;
-      width: 22px;
-      height: 3px;
+      display: inherit;
+      height: 4px;
       background-color: white;
       position: relative;
-      bottom: 28px;
+      top: 9px;
     }
     &:hover {
       background-color: rgb(190, 190, 190);
-      &::after {
+      &:after {
         background-color: rgb(190, 190, 190);
       }
-      &::before {
+      &:before {
         background-color: rgb(190, 190, 190);
+      }
+    }
+  }
+
+  @media (min-width: 532.1px) {
+    .sidedrawer {
+      width: 373px;
+    }
+  }
+
+  @media (max-width: 350px) {
+    .sidedrawer {
+      &-menu {
+        & li {
+          height: 40px;
+        }
       }
     }
   }
