@@ -22,8 +22,6 @@ body {
 
 .my-container {
   padding: 0;
-  // max-width: 532px;
-  height: 100vh;
   overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none; 
@@ -40,9 +38,8 @@ body {
     max-width: 532px;
     width:100vw;
     height: 81vw;
-    margin-bottom: calc(10% + 37.239px); // 90.438px;
+    margin-bottom: calc(10% + 37.239px);
   &-nav {
-    // padding-top: 2%;
     font-size: 1.875em;
   }
   &-bottom {
@@ -78,7 +75,6 @@ body {
 }
 
 .card {
-  // max-height: 815px;
   max-width: 532px;
   border: none;
   position: relative;
@@ -110,7 +106,7 @@ body {
     line-height: 22px;
   }
   &-button-row {
-    height: 18.048vw; // 96px  0.175
+    height: 18.048vw;
   }
   &-follow-button {
     font-size: 0.9375em;
@@ -142,7 +138,6 @@ body {
   }
 
   .overlay {
-    // max-height: 450.906px;
     padding-top: 27.2px;
     &-bottom {
       height: 295px;
