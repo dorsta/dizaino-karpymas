@@ -137,9 +137,9 @@ body {
     transform: scale(1.1);
   }
 
-  .my-container {
-    height: 100vh;
-  }
+  // .my-container {
+    // height: 100vh;
+  // }
 
   .overlay {
     padding-top: 27.2px;
@@ -161,9 +161,9 @@ body {
       clip-path: none;
       border-radius: 24px;
     }
-    // &-row {
-    //   height: 100vh;
-    // }
+    &-row {
+      height: 100vh;
+    }
     &-button-row {
       height: 96px;
     }
