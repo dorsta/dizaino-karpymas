@@ -137,9 +137,9 @@ body {
     transform: scale(1.1);
   }
 
-  // .my-container {
-    // height: 100vh;
-  // }
+  .my-container {
+    height: 100%;
+  }
 
   .overlay {
     padding-top: 27.2px;
@@ -155,8 +155,8 @@ body {
     border-radius: 25px;
     max-height: 852.77px;
     width: 532px;
-    // display: inline;
     bottom: 0;
+    margin: auto;
     &-image {
       clip-path: none;
       border-radius: 24px;

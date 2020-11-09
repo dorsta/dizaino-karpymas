@@ -321,6 +321,9 @@ body {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
+  .my-container {
+    height: 100%;
+  }
   .overlay {
     padding-top: 27.2px;
   }
@@ -335,6 +338,7 @@ body {
     max-height: 852.77px;
     width: 532px;
     bottom: 0;
+    margin: auto;
   }
   .card-image {
     -webkit-clip-path: none;
