@@ -18,7 +18,7 @@ body {
 
 .my-container {
   padding: 0;
-  height: 100vh;
+  // height: 100vh;
   overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none; 
@@ -116,7 +116,7 @@ body {
 @media (min-width: 532.1px) {
 
   html {
-    height:100vh;
+    // height:100vh;
     overflow: hidden;
   }
 
