@@ -164,10 +164,6 @@
   font-family: "Raleway", sans-serif;
 }
 
-html {
-  overflow: hidden;
-}
-
 body {
   font-size: 16px;
 }
@@ -301,6 +297,9 @@ body {
 }
 
 @media (min-width: 532.1px) {
+  html {
+    overflow: hidden;
+  }
   body::before {
     background: url("../images/Rectangle 3.jpg") no-repeat center center fixed;
     content: "";
