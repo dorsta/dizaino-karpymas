@@ -314,6 +314,9 @@ body {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
+  .my-container {
+    height: 100vh;
+  }
   .overlay {
     padding-top: 27.2px;
   }
@@ -327,16 +330,12 @@ body {
     border-radius: 25px;
     max-height: 852.77px;
     width: 532px;
-    display: inline;
     bottom: 0;
   }
   .card-image {
     -webkit-clip-path: none;
             clip-path: none;
     border-radius: 24px;
-  }
-  .card-row {
-    height: 100vh;
   }
   .card-button-row {
     height: 96px;
