@@ -246,7 +246,6 @@ body {
 .card {
   max-width: 532px;
   border: none;
-  position: relative;
   bottom: 20px;
 }
 
@@ -298,6 +297,7 @@ body {
 
 @media (min-width: 532.1px) {
   html {
+    height: 100vh;
     overflow: hidden;
   }
   body::before {

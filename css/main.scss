@@ -73,9 +73,7 @@ body {
 
 .card {
   max-width: 532px;
-  // height: 815px;
   border: none;
-  position: relative;
   bottom: 20px;
   &-image {
     background-image: url("../images/Mask\ Group\ 1.jpg");
@@ -116,8 +114,9 @@ body {
 }
 
 @media (min-width: 532.1px) {
-  
+
   html {
+    height:100vh;
     overflow: hidden;
   }
 
