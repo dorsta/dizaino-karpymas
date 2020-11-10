@@ -181,6 +181,7 @@ body {
 }
 
 .my-container {
+  height: 100vh;
   padding: 0;
   overflow-y: scroll;
   -ms-overflow-style: none;
