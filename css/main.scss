@@ -9,6 +9,12 @@
 
 body {
   font-size: 16px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .row {
@@ -17,7 +23,6 @@ body {
 }
 
 .my-container {
-  height: 100vh;
   padding: 0;
   overflow-y: scroll;
   -ms-overflow-style: none;
