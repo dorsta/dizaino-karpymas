@@ -1,18 +1,18 @@
-$(document).ready(function() {
-    $(".sandwitch-menu").click(function() {
+$(function() {
+    const sideDrawerOn = () => {
         $(".backdrop").css("display","initial");
         $(".sidedrawer").css({"transform":"translateX(0)"});
-    })
+    }
 
-    $(".backdrop").click(function() {
+    const sideDrawerOff = () => {
         $(".backdrop").css("display","none")
-        $(".sidedrawer").css({"transform":"translateX(1000%)"});
-    }  )
+        $(".sidedrawer").css({"transform":"translateX(1000%)"}); 
+    }
 
-    $(".sidedrawer-close").click(function() {
-        $(".backdrop").css("display","none")
-        $(".sidedrawer").css({"transform":"translateX(1000%)"});
-    }  )
+    $(".sandwitch-menu").click(sideDrawerOn)
 
+    $(".backdrop").click(sideDrawerOff)
+
+    $(".sidedrawer-close").click(sideDrawerOff)
     
 })
